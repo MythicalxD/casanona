@@ -1,0 +1,8 @@
+{
+  "/(routes)/page": "app/(routes)/page.js",
+  "/(routes)/cart/page": "app/(routes)/cart/page.js",
+  "/(routes)/catalogue/page": "app/(routes)/catalogue/page.js",
+  "/(routes)/product/[productId]/page": "app/(routes)/product/[productId]/page.js",
+  "/(routes)/(checkout)/delivery/page": "app/(routes)/(checkout)/delivery/page.js",
+  "/(routes)/category/[categoryId]/[pageId]/page": "app/(routes)/category/[categoryId]/[pageId]/page.js"
+}
