@@ -32,6 +32,7 @@ const InfoPage = (data: any) => {
     event.stopPropagation();
 
     // change data here
+    data.data.attributes.id = data.data.id;
     data.data.id = data.data.id + "_" + selectedColor + "_" + selectedFabric;
     data.data.attributes.selectedColor = selectedColor;
     data.data.attributes.selectedFabric = selectedFabric;

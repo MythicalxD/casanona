@@ -340,19 +340,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 35020:
+/***/ 57058:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 53999));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 67120, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 53999));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 25964));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 80277));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95358));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 96274));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 48503));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 17128));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 10700));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7278))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7278));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 17128));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 80277))
 
 /***/ }),
 
@@ -635,6 +635,7 @@ const InfoPage = (data)=>{
     const onAddToCart = (event)=>{
         event.stopPropagation();
         // change data here
+        data.data.attributes.id = data.data.id;
         data.data.id = data.data.id + "_" + selectedColor + "_" + selectedFabric;
         data.data.attributes.selectedColor = selectedColor;
         data.data.attributes.selectedFabric = selectedFabric;
@@ -1072,7 +1073,7 @@ const ProductPageContainer = async ({ params })=>{
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2669,7354,6659,5678,2626,9814,3425,983,8421,4416,3712,7735,4970,6446,1608,45,8483,8463,5019,5964,1250,5056,606,910,2124,5643,8718,9618], () => (__webpack_exec__(98146)));
+var __webpack_exports__ = __webpack_require__.X(0, [2669,7354,6659,5678,2626,9814,3425,983,8421,4416,3712,7735,4970,6446,1608,45,8483,8463,5019,5964,1250,5056,3364,910,2124,5643,8718,9618], () => (__webpack_exec__(98146)));
 module.exports = __webpack_exports__;
 
 })();

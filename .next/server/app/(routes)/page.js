@@ -362,14 +362,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 47187:
+/***/ 78005:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 67120, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6345));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79112));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 86266));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 65661));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 86266));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 25964));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 53999))
 
@@ -755,8 +755,8 @@ const Container = ({ children })=>{
 /* harmony export */   f$: () => (/* binding */ API_URL_IMAGE)
 /* harmony export */ });
 /* unused harmony exports STRAPI_API_TOKEN, STRAPI_API_TOKEN_POST */
-const API_URL = "http://13.200.11.37:1337" || 0;
-const API_URL_IMAGE = "http://13.200.11.37:1337";
+const API_URL = "http://65.2.56.60:1337" || 0;
+const API_URL_IMAGE = "http://65.2.56.60:1337";
 const STRAPI_API_TOKEN = process.env.REACT_APP_TOKEN;
 const STRAPI_API_TOKEN_POST = process.env.POST_TOKEN;
 
@@ -1113,7 +1113,7 @@ async function HomePage() {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(home_nav, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "flex h-[40vh] w-[0px] absolute top-[10px] left-[10px] z-10 md:text-[120px] text-[40px] font-bold transform rotate-90",
+                        className: "flex md:h-[40vh] h-[100px] w-[0px] absolute md:top-[10px] top-[140px] left-[10px] z-10 md:text-[120px] text-[40px] font-bold transform rotate-90",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                             className: "transform text-stone-300",
                             children: "ELEGANT"
@@ -1134,7 +1134,7 @@ async function HomePage() {
                                 /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                     href: "/catalogue",
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "flex md:flex-row flex-col md:mt-0 mt-[100px] items-center justify-center transform transition-transform hover:scale-105 md:absolute top-[50px] left-[200px]",
+                                        className: "flex md:flex-row flex-col md:mt-0 mt-[130px] items-center justify-center transform transition-transform hover:scale-105 md:absolute top-[50px] left-[200px]",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: "md:w-[450px] md:h-[450px] w-[300px] h-[300px] overflow-hidden",
@@ -1160,12 +1160,12 @@ async function HomePage() {
                                 /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                     href: "/product/1",
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "flex md:flex-row flex-col md:mx-0 mx-10 items-center justify-center transform transition-transform hover:scale-105 md:absolute top-[290px] right-[100px]",
+                                        className: "flex md:flex-row flex-col md:mx-0 mx-10 items-center justify-center transform transition-transform hover:scale-105 md:absolute md:top-[290px] top-[260px] right-[100px]",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "mt-5 text-center",
+                                                className: "md:mt-5 mt-0 text-center",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                    className: "flex ml-4 mt-16 z-10 md:text-[120px] text-[40px] font-bold",
+                                                    className: "flex ml-4 md:mt-16 mt-4 z-10 md:text-[120px] text-[40px] font-bold",
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                                         className: "transform text-[#ead2d8]",
                                                         children: "READY TO BUY"

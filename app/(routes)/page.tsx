@@ -52,7 +52,7 @@ export default async function HomePage() {
         {/* Navigation */}
         <HomeNavBase />
 
-        <div className="flex h-[40vh] w-[0px] absolute top-[10px] left-[10px] z-10 md:text-[120px] text-[40px] font-bold transform rotate-90">
+        <div className="flex md:h-[40vh] h-[100px] w-[0px] absolute md:top-[10px] top-[140px] left-[10px] z-10 md:text-[120px] text-[40px] font-bold transform rotate-90">
           <h2 className="transform text-stone-300">ELEGANT</h2>
         </div>
 
@@ -69,7 +69,7 @@ export default async function HomePage() {
         >
           <div className="w-full h-[110vh] bg-gradient-to-r from-[#fff5f5] to-[#f1fff9] ">
             <Link href="/catalogue">
-              <div className="flex md:flex-row flex-col md:mt-0 mt-[100px] items-center justify-center transform transition-transform hover:scale-105 md:absolute top-[50px] left-[200px]">
+              <div className="flex md:flex-row flex-col md:mt-0 mt-[130px] items-center justify-center transform transition-transform hover:scale-105 md:absolute top-[50px] left-[200px]">
                 <div className="md:w-[450px] md:h-[450px] w-[300px] h-[300px] overflow-hidden">
                   <img
                     src={leftImage}
@@ -87,9 +87,9 @@ export default async function HomePage() {
 
             {/* Section for the right side */}
             <Link href="/product/1">
-              <div className="flex md:flex-row flex-col md:mx-0 mx-10 items-center justify-center transform transition-transform hover:scale-105 md:absolute top-[290px] right-[100px]">
-                <div className="mt-5 text-center">
-                  <div className="flex ml-4 mt-16 z-10 md:text-[120px] text-[40px] font-bold">
+              <div className="flex md:flex-row flex-col md:mx-0 mx-10 items-center justify-center transform transition-transform hover:scale-105 md:absolute md:top-[290px] top-[260px] right-[100px]">
+                <div className="md:mt-5 mt-0 text-center">
+                  <div className="flex ml-4 md:mt-16 mt-4 z-10 md:text-[120px] text-[40px] font-bold">
                     <h2 className="transform text-[#ead2d8]">READY TO BUY</h2>
                   </div>
                 </div>

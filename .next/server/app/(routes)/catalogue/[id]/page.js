@@ -623,8 +623,8 @@ const Container = ({ children })=>{
 /* harmony export */   f$: () => (/* binding */ API_URL_IMAGE)
 /* harmony export */ });
 /* unused harmony exports STRAPI_API_TOKEN, STRAPI_API_TOKEN_POST */
-const API_URL = "http://13.200.11.37:1337" || 0;
-const API_URL_IMAGE = "http://13.200.11.37:1337";
+const API_URL = "http://65.2.56.60:1337" || 0;
+const API_URL_IMAGE = "http://65.2.56.60:1337";
 const STRAPI_API_TOKEN = process.env.REACT_APP_TOKEN;
 const STRAPI_API_TOKEN_POST = process.env.POST_TOKEN;
 

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
+import { API_URL } from "@/utils/urls";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { MouseEventHandler, useState } from "react";
@@ -36,7 +37,7 @@ const ContactForm: React.FC<FormProps> = ({ bg }) => {
 
     axios
       .post(
-        "http://13.200.11.37:1337/api/contacts",
+        `${API_URL}/api/contacts`,
         { data: formData },
         {
           headers: {

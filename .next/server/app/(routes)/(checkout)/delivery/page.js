@@ -380,11 +380,11 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 91026:
+/***/ 56064:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 30107));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 67120, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 67120, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 30107))
 
 /***/ }),
 
@@ -402,12 +402,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ui_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(83792);
 /* harmony import */ var _components_ui_scroll_area__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(53489);
 /* harmony import */ var _components_ui_select__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(68718);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(40248);
-/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(59483);
-/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(18038);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(33518);
+/* harmony import */ var _utils_urls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(25069);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(40248);
+/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(59483);
+/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(18038);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(33518);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
@@ -417,9 +418,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const AddressForm = ({ bg })=>{
-    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_5__.useRouter)();
-    const [formData, setFormData] = (0,react__WEBPACK_IMPORTED_MODULE_6__.useState)({
+    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_6__.useRouter)();
+    const [formData, setFormData] = (0,react__WEBPACK_IMPORTED_MODULE_7__.useState)({
         name: "",
         address: "",
         landmark: "",
@@ -437,15 +439,15 @@ const AddressForm = ({ bg })=>{
             }));
     };
     const onCheckout = ()=>{
-        const token = "928c7c5e0376d6f414438676b97437606a43222c9ebd788e9178973d58fa96f54dbda3e27e7eae8d4ef17e04cf388e11ee287a71060ed08addf1aa741733e367937a3e1367fce812c41c559f7a9425bfde9311fef80c6741407c5730b7241a467b301ddaabaed5b80899bc4f6c32ea77fe276d2a007406b8e56660a3330f63f6"; // Replace with your actual token
-        axios__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z.post("http://localhost:1337/api/addresses", {
+        const token = "c850cdab61bcff8dcbce2c28f2539f0f502f86ad0e7cbeef51c10d07cab6cb7b0183b0c49d4ac4d69bef1feddf884d2547ce43d0c5d1c23d275e26278c98ceaf00eea9a258ae94bc8e0ef6d9dee297f071576d439dca92d1dba876f9fb0bd19e46fd42019535157401c967b7f977195dada6cb0fee8abb087493b0ac72f7785d"; // Replace with your actual token
+        axios__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z.post(`${_utils_urls__WEBPACK_IMPORTED_MODULE_5__/* .API_URL */ .T5}/api/addresses`, {
             data: formData
         }, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
         }).then((response)=>{
-            react_hot_toast__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .ZP.success("Address Saved Successfully.");
+            react_hot_toast__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .ZP.success("Address Saved Successfully.");
             // Handle success
             router.push(`/payment/${response.data.data.id}`);
         }).catch((error)=>{
@@ -657,6 +659,23 @@ const AddressForm = ({ bg })=>{
     });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddressForm);
+
+
+/***/ }),
+
+/***/ 25069:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   T5: () => (/* binding */ API_URL),
+/* harmony export */   f$: () => (/* binding */ API_URL_IMAGE)
+/* harmony export */ });
+/* unused harmony exports STRAPI_API_TOKEN, STRAPI_API_TOKEN_POST */
+const API_URL = "http://65.2.56.60:1337" || 0;
+const API_URL_IMAGE = "http://65.2.56.60:1337";
+const STRAPI_API_TOKEN = process.env.REACT_APP_TOKEN;
+const STRAPI_API_TOKEN_POST = process.env.POST_TOKEN;
 
 
 /***/ }),

@@ -9,6 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { API_URL } from "@/utils/urls";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -42,11 +43,11 @@ const AddressForm: React.FC<FormProps> = ({ bg }) => {
 
   const onCheckout = () => {
     const token =
-      "928c7c5e0376d6f414438676b97437606a43222c9ebd788e9178973d58fa96f54dbda3e27e7eae8d4ef17e04cf388e11ee287a71060ed08addf1aa741733e367937a3e1367fce812c41c559f7a9425bfde9311fef80c6741407c5730b7241a467b301ddaabaed5b80899bc4f6c32ea77fe276d2a007406b8e56660a3330f63f6"; // Replace with your actual token
+      "c850cdab61bcff8dcbce2c28f2539f0f502f86ad0e7cbeef51c10d07cab6cb7b0183b0c49d4ac4d69bef1feddf884d2547ce43d0c5d1c23d275e26278c98ceaf00eea9a258ae94bc8e0ef6d9dee297f071576d439dca92d1dba876f9fb0bd19e46fd42019535157401c967b7f977195dada6cb0fee8abb087493b0ac72f7785d"; // Replace with your actual token
 
     axios
       .post(
-        "http://localhost:1337/api/addresses",
+        `${API_URL}/api/addresses`,
         { data: formData },
         {
           headers: {

@@ -418,6 +418,8 @@ const Textarea = /*#__PURE__*/ react_.forwardRef(({ className, ...props }, ref)=
 Textarea.displayName = "Textarea";
 
 
+// EXTERNAL MODULE: ./utils/urls.ts
+var urls = __webpack_require__(25069);
 // EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 46 modules
 var axios = __webpack_require__(40248);
 // EXTERNAL MODULE: ./node_modules/next/navigation.js
@@ -426,6 +428,7 @@ var navigation = __webpack_require__(59483);
 var dist = __webpack_require__(33518);
 ;// CONCATENATED MODULE: ./components/contact-form.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -451,7 +454,7 @@ const ContactForm = ({ bg })=>{
     };
     const onCheckout = ()=>{
         const token = "c850cdab61bcff8dcbce2c28f2539f0f502f86ad0e7cbeef51c10d07cab6cb7b0183b0c49d4ac4d69bef1feddf884d2547ce43d0c5d1c23d275e26278c98ceaf00eea9a258ae94bc8e0ef6d9dee297f071576d439dca92d1dba876f9fb0bd19e46fd42019535157401c967b7f977195dada6cb0fee8abb087493b0ac72f7785d"; // Replace with your actual token
-        axios/* default */.Z.post("http://13.200.11.37:1337/api/contacts", {
+        axios/* default */.Z.post(`${urls/* API_URL */.T5}/api/contacts`, {
             data: formData
         }, {
             headers: {
@@ -931,7 +934,7 @@ function $ae6933e535247d3d$export$7d15b64cf5a3a4c4(value, [min, max]) {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2669,7354,6659,9814,983,4416,248,3130,8463,5019,5056,606,4676,3489], () => (__webpack_exec__(62091)));
+var __webpack_exports__ = __webpack_require__.X(0, [2669,7354,6659,9814,983,4416,248,3130,8463,5019,5056,3364,4676,3489], () => (__webpack_exec__(62091)));
 module.exports = __webpack_exports__;
 
 })();

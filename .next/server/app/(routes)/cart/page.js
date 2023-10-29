@@ -873,23 +873,6 @@ const Container = ({ children })=>{
 
 /***/ }),
 
-/***/ 25069:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   T5: () => (/* binding */ API_URL),
-/* harmony export */   f$: () => (/* binding */ API_URL_IMAGE)
-/* harmony export */ });
-/* unused harmony exports STRAPI_API_TOKEN, STRAPI_API_TOKEN_POST */
-const API_URL = "http://13.200.11.37:1337" || 0;
-const API_URL_IMAGE = "http://13.200.11.37:1337";
-const STRAPI_API_TOKEN = process.env.REACT_APP_TOKEN;
-const STRAPI_API_TOKEN_POST = process.env.POST_TOKEN;
-
-
-/***/ }),
-
 /***/ 5262:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -988,7 +971,7 @@ const ShoppingBag = (0,_createLucideIcon_mjs__WEBPACK_IMPORTED_MODULE_0__/* ["de
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2669,7354,6659,5678,2626,8421,6446,8463,5019,5964,2124,7529], () => (__webpack_exec__(2916)));
+var __webpack_exports__ = __webpack_require__.X(0, [2669,7354,6659,5678,2626,8421,6446,8463,5019,5964,2124,3674], () => (__webpack_exec__(2916)));
 module.exports = __webpack_exports__;
 
 })();

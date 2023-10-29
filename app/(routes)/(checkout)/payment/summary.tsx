@@ -8,6 +8,7 @@ import useCart from "@/hooks/use-cart";
 import { toast } from "react-hot-toast";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
+import { API_URL } from "@/utils/urls";
 
 interface SummaryProps {
   value: string;
@@ -54,17 +55,17 @@ const Summary: React.FC<SummaryProps> = ({ value, id }) => {
       id: id,
     },
   };
-  
+
 
   const onCheckout = () => {
     const match = pathname.match(/^\/payment\/(.+)$/);
     if (match) {
       const token =
-        "6770dd2e488e6294b50be149db7cf77fd2c48c6d6da77bae82dc12513b68b2b48b313a007d7d6fe68b50d86c0e0ac2136cd103407739e1a20af4e6c8a7e04c7cf752f7ede8265c52f9a49f5437d1ca36aec4f39c367e237404c031ed75c760670dbafb4237aba1f42c3ddf9ec2218f24634ff4d7fe30b241c8d765c0667cbd5a"; // Replace with your actual token
+        "c850cdab61bcff8dcbce2c28f2539f0f502f86ad0e7cbeef51c10d07cab6cb7b0183b0c49d4ac4d69bef1feddf884d2547ce43d0c5d1c23d275e26278c98ceaf00eea9a258ae94bc8e0ef6d9dee297f071576d439dca92d1dba876f9fb0bd19e46fd42019535157401c967b7f977195dada6cb0fee8abb087493b0ac72f7785d"; // Replace with your actual token
 
       axios
         .post(
-          "http://localhost:1337/api/orders",
+          `${API_URL}/api/orders`,
           { data: predefinedOrder },
           {
             headers: {
