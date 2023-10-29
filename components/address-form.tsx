@@ -89,8 +89,8 @@ const AddressForm: React.FC<FormProps> = ({ bg }) => {
           <div className=" lg:text-black text-white text-5xl font-semibold lg:mt-0 mt-10">
             Make it Yours
           </div>
-          <div className="text-zinc-400 text-xl">
-            Want us to bring this to you? Okaaay, you are 2 steps away!
+          <div className="text-zinc-400 text-lg text-center">
+            Want us to bring this to you? Okay, you are 2 steps away!
           </div>
           <ScrollArea className="h-[800px] w-[450px] rounded-md border p-4 mt-8">
             <div className="flex flex-col m-2">

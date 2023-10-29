@@ -3,16 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
 import toast from "react-hot-toast";
 
 interface FormProps {
@@ -61,9 +54,13 @@ const ContactForm: React.FC<FormProps> = ({ bg }) => {
       });
   };
 
+  const gotoHome: MouseEventHandler<HTMLDivElement> = (event) => {
+    router.push("/");
+  };
+
   return (
     <div>
-      <div className="relative h-screen w-screen">
+      <div className="relative h-[110vh] w-screen">
         {bg !== null && (
           <img
             className="lg:w-[60%] w-[100%] h-full object-cover"
@@ -72,20 +69,23 @@ const ContactForm: React.FC<FormProps> = ({ bg }) => {
           />
         )}
 
-        <div className="absolute left-5 top-5 z-10">
+        <div
+          className="absolute left-5 top-5 z-10 cursor-pointer"
+          onClick={gotoHome}
+        >
           <span className="text-white text-[40px] font-normal">Casa</span>
           <span className="text-green-500 text-[40px] font-normal">Nona</span>
         </div>
 
-        <div className="lg:bg-[#00000033] bg-[#111111be] h-screen lg:w-[40%] w-full absolute right-0 top-0 flex flex-col mb-8 md:p-16 p-4 md:mt-0 mt-0 justify-start items-start">
+        <div className="lg:bg-[#89858533] bg-[#111111be] h-[110vh] lg:w-[40%] w-full absolute right-0 top-0 flex flex-col mb-8 md:p-16 p-4 md:mt-0 mt-0 justify-start items-start">
           {/* Title */}
-          <div className=" lg:text-black text-white text-5xl font-semibold lg:mt-0 md:mt-10 mt-20">
+          <div className=" lg:text-black text-white text-4xl font-semibold lg:mt-0 md:mt-10 mt-20">
             Contact Us
           </div>
-          <div className="text-zinc-700 text-xl">
+          <div className="text-zinc-700 text-xl md:ml-1">
             Crafting Your Dream Space, One Custom Piece at a Time.
           </div>
-          <ScrollArea className="h-[800px] md:w-[450px] rounded-md border p-4 mt-8">
+          <ScrollArea className="h-[800px] md:w-[450px] rounded-md border p-1 mt-2">
             <div className="flex flex-col m-2">
               {/* Form Starting --------------------------------------------- */}
 

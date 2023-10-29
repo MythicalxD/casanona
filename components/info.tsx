@@ -54,7 +54,7 @@ const InfoPage = (data: any) => {
         </p>
       </div>
       <div className="flex items-center gap-x-4">
-        <h3 className="text-gray-500 max-w-[500px] mt-2 mb-2">
+        <h3 className="text-gray-500 max-w-[500px] mt-2 mb-2 text-md">
           {data.data.attributes.description}
         </h3>
       </div>

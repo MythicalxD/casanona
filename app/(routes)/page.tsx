@@ -2,13 +2,9 @@ import { getArrivals } from "@/actions/get-arrivals";
 import { getBillboards } from "@/actions/get-billboard";
 import { getCategories } from "@/actions/get-categories";
 import { getFeatured } from "@/actions/get-featured";
-import BrowseNav from "@/components/browse-nav";
-import ContactForm from "@/components/contact-form";
 import Footer from "@/components/footer";
-import HomeNav from "@/components/home-nav";
 import NewsLetterForm from "@/components/news-letter-form";
 import Container from "@/components/ui/container";
-import YouTubePlayer from "@/components/youtube-player";
 import { API_URL_IMAGE } from "@/utils/urls";
 import { Katibeh } from "next/font/google";
 import Link from "next/link";
@@ -18,7 +14,6 @@ import { getBlogs } from "@/actions/get-blogs";
 import TestimonialPage from "@/components/testimonial";
 import { getTestimonial } from "@/actions/get-testimonials";
 import { getBanner } from "@/actions/get-banners";
-import { getYoutube } from "@/actions/get-youtube";
 import HomeNavBase from "@/components/home-nav";
 
 const newFont = Katibeh({ weight: "400", subsets: ["latin"] });
@@ -42,9 +37,6 @@ export default async function HomePage() {
   // Get suggested Products
   const suggestedProducts = await getFeatured();
 
-  // Get new products
-  const arrivals = await getArrivals();
-
   //Get blogs
   const blogs = await getBlogs("");
 
@@ -53,9 +45,6 @@ export default async function HomePage() {
 
   // get Banner
   const banner = await getBanner();
-
-  // get youtube
-  const youtube = await getYoutube();
 
   return (
     <Container>
@@ -89,20 +78,20 @@ export default async function HomePage() {
                   />
                 </div>
                 <div className="mt-5 text-center">
-                  <p className="md:text-[70px] text-5xl md:w-[80px] md:leading-[40px] md:px-10 hover:text-[80px] cursor-pointer text-[#488376]">
-                    CUSTOM BUILD FURNITURE
-                  </p>
+                  <div className="flex ml-4 z-10 md:text-[120px] text-[40px] font-bold">
+                    <h2 className="transform text-[#c3dfda]">CUSTOM BUILD</h2>
+                  </div>
                 </div>
               </div>
             </Link>
 
             {/* Section for the right side */}
             <Link href="/product/1">
-              <div className="flex md:flex-row flex-col md:mx-0 mx-10 items-center justify-center md:h-screen transform transition-transform hover:scale-105 md:absolute top-[150px] right-[100px]">
+              <div className="flex md:flex-row flex-col md:mx-0 mx-10 items-center justify-center transform transition-transform hover:scale-105 md:absolute top-[290px] right-[100px]">
                 <div className="mt-5 text-center">
-                  <p className="md:text-[70px] text-5xl md:w-[350px] md:leading-[40px] md:pr-[-5rem] md:mt-[60px] md:hover:text-[80px] cursor-pointer text-[#3D6275]">
-                    READY TO BUY FURNITURE
-                  </p>
+                  <div className="flex ml-4 mt-16 z-10 md:text-[120px] text-[40px] font-bold">
+                    <h2 className="transform text-[#ead2d8]">READY TO BUY</h2>
+                  </div>
                 </div>
                 <div className="md:w-[450px] md:h-[450px] w-[300px] h-[300px] overflow-hidden">
                   <img

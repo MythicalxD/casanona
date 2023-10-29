@@ -5,7 +5,6 @@ import { getProduct } from "@/actions/get-product";
 import ProductCard2 from "@/components/ui/product-card2";
 import { getProducts } from "@/actions/get-products";
 import Noresults from "@/components/ui/no-results";
-import HomeNav from "@/components/home-nav";
 import { getCategories } from "@/actions/get-categories";
 import BrowseNav from "@/components/browse-nav";
 import Footer from "@/components/footer";
@@ -15,7 +14,6 @@ import Filter from "../../category/[categoryId]/[pageId]/components/filter";
 import MobileFilter from "../../category/[categoryId]/[pageId]/components/mobile-filters";
 import { getArrivals } from "@/actions/get-arrivals";
 import { Separator } from "@/components/ui/separator";
-import { Cross, Minimize2 } from "lucide-react";
 import HomeNavBase from "@/components/home-nav-base";
 
 interface ProductPageProps {

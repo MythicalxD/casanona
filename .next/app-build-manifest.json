@@ -1,31 +1,41 @@
 {
   "pages": {
-    "/layout": [
+    "/(routes)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/css/app/(routes)/page.css",
+      "static/chunks/app/(routes)/page.js"
+    ],
+    "/(routes)/cart/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/cart/page.js"
+    ],
+    "/(routes)/catalogue/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/catalogue/page.js"
+    ],
+    "/(routes)/catalogue/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/catalogue/[id]/page.js"
+    ],
+    "/(routes)/(checkout)/delivery/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/(checkout)/delivery/page.js"
     ],
     "/(routes)/product/[productId]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(routes)/product/[productId]/page.js"
     ],
-    "/(routes)/search/[categoryId]/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/search/[categoryId]/page.js"
-    ],
-    "/(routes)/category/[categoryId]/[pageId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/category/[categoryId]/[pageId]/page.js"
-    ],
-    "/(routes)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(routes)/page.css",
-      "static/chunks/app/(routes)/page.js"
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/(routes)/about/page": [
       "static/chunks/webpack.js",
@@ -37,31 +47,6 @@
       "static/chunks/main-app.js",
       "static/css/app/(routes)/blogs/[blogsId]/page.css",
       "static/chunks/app/(routes)/blogs/[blogsId]/page.js"
-    ],
-    "/(routes)/cart/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/cart/page.js"
-    ],
-    "/(routes)/orders/[mob]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/orders/[mob]/page.js"
-    ],
-    "/(routes)/catalogue/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/catalogue/page.js"
-    ],
-    "/(routes)/subcategory/[categoryId]/[pageId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/subcategory/[categoryId]/[pageId]/page.js"
-    ],
-    "/(routes)/(checkout)/delivery/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/(checkout)/delivery/page.js"
     ]
   }
 }
