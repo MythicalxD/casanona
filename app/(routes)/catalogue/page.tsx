@@ -29,7 +29,7 @@ const CataloguePage = async () => {
               {wooden.length === 0 && <Noresults />}
               <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:gap-x-4 md:gap-y-8 md:mb-8 gap-x-1 gap-y-4">
                 {wooden.map((item: { attributes: any; data: any; id: any }) => (
-                  <Link href={`/catalogue/${item.id}`}>
+                  <Link href={`/catalogue/${item.id}`} key={item.id}>
                     <div
                       key={item.id}
                       className="w-[241px] h-[285px] relative rounded-[10px] overflow-hidden hover:shadow-lg transition duration-300 ease-in-out group cursor-pointer"

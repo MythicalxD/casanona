@@ -69,7 +69,7 @@ const Footer = async () => {
                 {category.data.slice(0, 6).map((category: any) => (
                   <Link
                     id={category.id}
-                    href={`/subcategory/${category.id}`}
+                    href={`/subcategory/${category.id}/1`}
                     key={category.id}
                   >
                     <li className="mb-2">{category.attributes.name}</li>

@@ -90,7 +90,7 @@ const SubCategoryPage: React.FC<CategoryPageProps> = async ({ params }) => {
                 {allProducts.length === 0 ? (
                   <Noresults />
                 ) : (
-                  <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-8 mb-8 mt-4 min-h-[80vh]">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-x-4 gap-y-8 mb-8 mt-4 min-h-[80vh]">
                     {allProducts.map((item: { id: any }) => (
                       <ProductCard2 data={item} key={item.id} />
                     ))}
@@ -102,7 +102,7 @@ const SubCategoryPage: React.FC<CategoryPageProps> = async ({ params }) => {
                 {products[0]?.attributes.products.data.length === 0 ? (
                   <Noresults />
                 ) : (
-                  <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-8 mb-8 min-h-[80vh]">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-x-4 gap-y-8 mb-8 min-h-[80vh]">
                     {products[0]?.attributes.products.data.map(
                       (item: { id: any }) => (
                         <ProductCard2 data={item} key={item.id} />
