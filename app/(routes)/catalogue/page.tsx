@@ -4,7 +4,7 @@ import Container from "@/components/ui/container";
 import Footer from "@/components/footer";
 import ContactForm from "@/components/contact-form";
 import Noresults from "@/components/ui/no-results";
-import { API_URL } from "@/utils/urls";
+import { API_URL, API_URL_IMAGE } from "@/utils/urls";
 import Link from "next/link";
 
 const CataloguePage = async () => {
@@ -36,7 +36,7 @@ const CataloguePage = async () => {
                     >
                       <img
                         className="w-[264px] h-[288.75px] left-0 top-0 absolute transition-transform duration-300 ease-in-out transform hover:scale-110 rounded-[10px]"
-                        src={`${API_URL}${item.attributes.images.data[0].attributes.url}`}
+                        src={`${API_URL_IMAGE}${item.attributes.images.data[0].attributes.url}`}
                         alt={item.attributes.images.data[0].attributes.name}
                       />
 
@@ -107,7 +107,7 @@ const CataloguePage = async () => {
                     >
                       <img
                         className="w-[264px] h-[288.75px] left-0 top-0 absolute transition-transform duration-300 ease-in-out transform hover:scale-110 rounded-[10px]"
-                        src={`${API_URL}${item.attributes.images.data[0].attributes.url}`}
+                        src={`${API_URL_IMAGE}${item.attributes.images.data[0].attributes.url}`}
                         alt={item.attributes.images.data[0].attributes.name}
                       />
 
@@ -178,7 +178,7 @@ const CataloguePage = async () => {
                     >
                       <img
                         className="w-[264px] h-[288.75px] left-0 top-0 absolute transition-transform duration-300 ease-in-out transform hover:scale-110 rounded-[10px]"
-                        src={`${API_URL}${item.attributes.images.data[0].attributes.url}`}
+                        src={`${API_URL_IMAGE}${item.attributes.images.data[0].attributes.url}`}
                         alt={item.attributes.images.data[0].attributes.name}
                       />
 
