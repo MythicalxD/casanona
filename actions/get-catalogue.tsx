@@ -1,4 +1,4 @@
-import { API_URL, STRAPI_API_TOKEN } from "../utils/urls";
+import { API_URL, API_URL_IMAGE, STRAPI_API_TOKEN } from "../utils/urls";
 
 export const getCatalogue = async (keyword: String) => {
   const options = {
@@ -9,7 +9,7 @@ export const getCatalogue = async (keyword: String) => {
   };
 
   const res = await fetch(
-    `${API_URL}/api/catalogues?populate[0]=images&filters[tags][$contains]=${keyword}`,
+    `${API_URL_IMAGE}/api/catalogues?populate[0]=images&filters[tags][$contains]=${keyword}`,
     options
   );
   const data = await res.json();
